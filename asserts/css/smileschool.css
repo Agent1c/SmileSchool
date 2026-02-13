@@ -1,0 +1,130 @@
+/* Importing webfonts */
+/* (If you're learning CSS, you should disregard that) */
+
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+
+/* CSS reset rules */
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root{
+    --btn-color: #C271FF;
+}
+
+body {
+	font-family: 'Josefin Sans', serif;
+	color: rgba(0, 0, 0, 0.8);
+	color: rgba(255, 255, 255, 0.8);
+}
+h1, h2, h3, h4, h5, h6, header {
+	/* font-family: 'Yeseva One', sans-serif; */
+}
+
+
+/***** Freaky Coding Accessibility *****/ 
+.register-btn{
+    border-radius: 50px;
+    margin: 2em;
+    padding: 1.5em 2em;
+    border: none;
+    background: var(--btn-color);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#logo-btn{
+    border:  none;
+    background: transparent;
+    /* text-align: center;
+    padding: .3em; */
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+/***** End Freaky Coding Accessibility *****/
+
+
+/***** header-container *****/ 
+.header-container{
+    background: url(../img/Object.png) no-repeat center/cover fixed;
+    /* background-size: cover; */
+    height: 100vh;
+}
+
+
+.ss-header{
+    font-size: 10em;
+    padding-top: 1.1em;
+}
+
+.slogan{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#slogan-space{
+    padding: 1em;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.hero-container{
+    border:  1px solid yellow;
+    text-align: center;
+}
+
+.purple{
+    color: var(--btn-color);
+}
+
+
+.flex-hero-box{
+    display: flex;
+    justify-content: center;
+}
+
+.pros-file{
+    border: 1px solid lime;
+    margin: 3em;
+}
+.pros-file:nth-child(3) img{
+    border-radius: 30em;
+}
+
+
+/***** End header-container *****/
