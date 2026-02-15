@@ -7,47 +7,121 @@
 
 /* CSS reset rules */
 
-html, body {
-	height: 100%;
-	min-height: 100%;
-}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body {
+    height: 100%;
+    min-height: 100%;
 }
 
-:root{
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+:root {
     --btn-color: #C271FF;
+    --max-width: 1200px;
 }
 
 body {
-	font-family: 'Josefin Sans', serif;
-	color: rgba(0, 0, 0, 0.8);
-	color: rgba(255, 255, 255, 0.8);
+    font-family: 'Josefin Sans', serif;
+    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
 }
-h1, h2, h3, h4, h5, h6, header {
-	/* font-family: 'Yeseva One', sans-serif; */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+    /* font-family: 'Yeseva One', sans-serif; */
 }
 
 
-/***** Freaky Coding Accessibility *****/ 
-.register-btn{
+/***** Freaky Coding Accessibility *****/
+.register-btn {
     border-radius: 50px;
     margin: 2em;
     padding: 1.5em 2em;
@@ -58,73 +132,133 @@ h1, h2, h3, h4, h5, h6, header {
     font-weight: 700;
 }
 
-#logo-btn{
-    border:  none;
+#logo-btn {
+    border: none;
     background: transparent;
     /* text-align: center;
     padding: .3em; */
 }
 
-li, a{
+li,
+a {
     list-style: none;
     text-decoration: none;
     color: aliceblue;
 }
+
+h2 {
+    font-size: 2em;
+    padding-top: 1.5em;
+}
+
 /***** End Freaky Coding Accessibility *****/
 
 
-/***** header-container *****/ 
-.header-container{
-    background: url(../img/Object.png) no-repeat center/cover fixed;
+/***** header-container *****/
+.header-container {
+    background: url(../img/Object.png) no-repeat center/cover;
     /* background-size: cover; */
     height: 100vh;
+    /* width: 100%; */
 }
 
+.desktop-screen {
+    /* max-width: 1200px; */
 
-.ss-header{
+}
+
+.ss-header {
     font-size: 10em;
     padding-top: 1.1em;
 }
 
-.slogan{
+.slogan {
     font-size: 1.5em;
     text-transform: uppercase;
 }
 
-#slogan-space{
+#slogan-space {
     padding: 1em;
 }
-.navBar{
+
+.navBar {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
+
 }
 
-.hero-container{
-    border:  1px solid yellow;
+
+.nav-item {
+    padding: 1em;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.hero-container {
+    border: 1px solid yellow;
     text-align: center;
 }
 
-.purple{
+.purple {
     color: var(--btn-color);
 }
 
 
-.flex-hero-box{
+.flex-hero-box {
     display: flex;
     justify-content: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+
 }
 
-.pros-file{
+.pros-file {
     border: 1px solid lime;
-    margin: 3em;
+    margin: 2em;
 }
-.pros-file:nth-child(3) img{
+
+.pros-file:nth-child(3) img {
     border-radius: 30em;
 }
 
 
 /***** End header-container *****/
+
+
+/***** creater-container *****/
+.creater-container {
+    background: var(--btn-color);
+    width: 100%;
+}
+
+.creator {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.creator-flex {
+    /* margin: 2rem 4em; */
+    padding: 2em;
+
+}
+
+.creator-flex p,
+h3 {
+    padding: .5em .1em;
+    border: 1px solid goldenrod;
+
+}
+
+/***** End creater-container *****/
