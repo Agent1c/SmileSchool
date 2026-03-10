@@ -269,7 +269,8 @@ h3 {
 
 /***** Most Popular *****/ 
 .popular-container{
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
+    color: #000;
 }
 .popular-head{
     text-align: center;
